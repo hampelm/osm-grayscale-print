@@ -1,0 +1,131 @@
+{
+  "bounds": [
+    -83.3028,
+    42.2496,
+    -82.9038,
+    42.4597
+  ],
+  "center": [
+    -83.0674,
+    42.3596,
+    12
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "admin-bounds",
+    "template_teaser": "{{{name}}}"
+  },
+  "minzoom": 0,
+  "maxzoom": 15,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        -84.60134818159867,
+        41.65482953808709,
+        -81.89864986833815,
+        42.987635281223426
+      ],
+      "id": "coastline",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/matth/Downloads/detroit.coastline/detroit.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "coastline"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -83.874994,
+        41.8380111,
+        -82.375,
+        42.8109984
+      ],
+      "id": "polys",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/matth/Downloads/detroit.osm2pgsql-shapefiles/detroit.osm-polygon.shp",
+        "id": "polys",
+        "project": "DetroitPrint",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "polys"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -83.8749992,
+        41.83600400000001,
+        -82.375,
+        42.811
+      ],
+      "id": "lines",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/matth/Downloads/detroit.osm2pgsql-shapefiles/detroit.osm-line.shp",
+        "id": "lines",
+        "project": "DetroitPrint",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "lines"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -83.8749992,
+        41.83600400000001,
+        -82.375,
+        42.811
+      ],
+      "id": "primary-lines",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/matth/Downloads/detroit.osm2pgsql-shapefiles/detroit.osm-line.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "primary-lines"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -83.874994,
+        41.8380111,
+        -82.375,
+        42.8109984
+      ],
+      "id": "admin-bounds",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/matth/Downloads/detroit.osm2pgsql-shapefiles/detroit.osm-polygon.shp",
+        "id": "admin-bounds",
+        "project": "DetroitPrint",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "admin-bounds"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "",
+  "description": "",
+  "attribution": "",
+  "legend": ""
+}
