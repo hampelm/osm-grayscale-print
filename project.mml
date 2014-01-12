@@ -13,7 +13,10 @@
   "format": "png",
   "interactivity": {
     "layer": "admin-bounds",
-    "template_teaser": "{{{name}}}"
+    "template_teaser": "{{{name}}}",
+    "fields": [
+      "name"
+    ]
   },
   "minzoom": 0,
   "maxzoom": 15,

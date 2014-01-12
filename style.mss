@@ -2,8 +2,8 @@
 @admin: #333;
 @important: #999;
 @light: #ccc;
-@highway: #ccc;
-@highway-edge: #bbb;
+@highway: #ddd;
+@highway-edge: #999;
 @park: #eee;
 @water: #eee;
 
@@ -23,6 +23,15 @@ Map {
 #lines { 
   line-cap: round;
   line-width: 0;
+  
+  [highway='primary'] {
+    ::outline {
+      line-color: @highway-edge;
+      line-width: 0;
+    }
+    line-width: 2.5;
+    line-color: @highway;
+  }
   
   [highway='residential'],
   [highway='secondary'],
@@ -47,20 +56,12 @@ Map {
   [highway='trunk'] {
     ::outline {
       line-color: @highway-edge;
-      line-width: 3.5;
+      line-width: 4;
     }
-    line-width: 2.5;
+    line-width: 2;
     line-color: @highway;
   }
 
-  [highway='primary'] {
-    ::outline {
-      line-color: @highway-edge;
-      line-width: 3;
-    }
-    line-width: 1;
-    line-color: @highway;
-  }
 }
 
 #polys {
